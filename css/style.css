@@ -1,3 +1,14 @@
+header {
+  background-color: #ffe4c4;
+  padding: 10px;
+   margin: 10px;
+   position: fixed;
+   width: 100%;
+  -webkit-box-shadow: 0px 7px 14px 0px rgba(50, 50, 61, 0.36);
+-moz-box-shadow:    0px 7px 14px 0px rgba(50, 50, 61, 0.36);
+box-shadow:         0px 7px 14px 0px rgba(50, 50, 61, 0.36);
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -5,6 +16,9 @@ body {
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
+}
+main {
+padding-top: 133px;
 }
 
 h1, h2, h3, h4 {
@@ -65,4 +79,47 @@ a:focus {
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.center {
+  text-align: center;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+/* #hero h1 {
+  text-align: center; /* Centers text */
+} */
+.logo {
+  max-width: 250px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+#hero {
+  background-color: #ffe4c4;
+}
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
