@@ -220,6 +220,10 @@ Extra-large devices (1920px or larger)
 #my-story {
   overflow: hidden;
 }
+#my-story .skills{
+    display: inline-block;
+    padding: 0 0em 0 2em;
+}
 #my-story h2 {
   margin: 0
 }
