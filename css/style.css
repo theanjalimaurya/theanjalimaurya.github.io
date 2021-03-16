@@ -125,7 +125,7 @@ a:focus {
 }
 
 .row {
-  margin: 2em 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
   width: 100%;
 max-width: 100%;
 height: auto;
@@ -133,7 +133,11 @@ height: auto;
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 /* #hero h1 {
   text-align: center; /* Centers text */
+
+#work h2 {
+  text-align: center;
 }
+
 .logo {
   max-width: 250px;
 }
@@ -204,7 +208,7 @@ Extra-large devices (1920px or larger)
 
 [class*="col-"] {
   float: left;
-  padding: 0 2em 0 0;
+  padding: 0 3em 0 2em;
 }
 
 .row::after {
@@ -213,6 +217,9 @@ Extra-large devices (1920px or larger)
     display: table;
   }
 
+#my-story {
+  overflow: hidden;
+}
 #my-story h2 {
   margin: 0
 }
@@ -245,4 +252,8 @@ Extra-large devices (1920px or larger)
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.berlin-illustration {
+  width: -webkit-fill-available;
 }
