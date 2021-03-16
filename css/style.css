@@ -1,4 +1,5 @@
 header {
+  text-align: unset;
   background-color: #ffe4c4;
   padding: 10px;
    /* margin: 10px; */
@@ -18,7 +19,7 @@ body {
   color: #4a4a4a;
 }
 main {
-padding-top: 133px;
+padding-top: 99px;
 }
 
 h1, h2, h3, h4 {
@@ -80,20 +81,42 @@ a:focus {
   background-color: #ff7f50;
   color: #ffffff;
 }
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+}
+.button:hover {
+  opacity: 0.8;
+}
 .container {
   max-width: 1200px;
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .center {
   text-align: center;
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  width: 100%;
+max-width: 100%;
+height: auto;
 }
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 /* #hero h1 {
   text-align: center; /* Centers text */
-} */
+}
 .logo {
   max-width: 250px;
 }
@@ -110,9 +133,7 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
 }
-#hero {
-  background-color: #ffe4c4;
-}
+
 #hero h1 {
   margin: 0;
   padding: 0.67em 0;
@@ -122,4 +143,89 @@ nav > ul > li > a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0 3em 0 2em;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#my-story h2 {
+  margin: 0
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
