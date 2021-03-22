@@ -13,17 +13,13 @@ header {
 body {
   background-color: #ffffff;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  /* Sets the font size to 16px */
-  font-weight: 300;
-  /* Sets the font weight to 300 */
-  line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-
 main {
-  padding-top: 68px;
+  padding-top: 50px;
 }
 
 h1,
@@ -32,7 +28,6 @@ h3,
 h4 {
   line-height: 1.4;
 }
-
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -47,12 +42,10 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
-
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-
 img {
   width: 100%;
 }
@@ -61,13 +54,11 @@ a {
   color: #ff7f50;
   text-decoration: none;
 }
-
 a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
-
 .button {
   display: inline-block;
   background-color: #ff7f50;
@@ -78,14 +69,11 @@ a:focus {
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
 }
-
 .button:hover {
-  opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   color: #ffffff;
 }
-
 .button.contact {
   background-color: transparent;
   color: #ff7f50;
@@ -93,12 +81,10 @@ a:focus {
   border: 2px solid #ff7f50;
   margin: 1em 0 0 0;
 }
-
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
 }
-
 .button {
   display: inline-block;
   background-color: #ff7f50;
@@ -110,13 +96,12 @@ a:focus {
   border-bottom: 2px solid #994c30;
   transition-duration: 0.2s;
   transition-property: opacity;
-  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+  transition: [transition-property] [transition-duration]
+    [transition-timing-function] [transition-delay];
 }
-
 .button:hover {
   opacity: 0.8;
 }
-
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -136,7 +121,6 @@ a:focus {
   height: 4em;
   width: 4em;
 }
-
 .contact-svg-div {
   display: flex;
   justify-content: center;
@@ -144,40 +128,29 @@ a:focus {
 }
 
 .row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
-
 /* #hero h1 {
   text-align: center; /* Centers text */
+
 #work h2 {
   text-align: center;
 }
 
-.logo {
-  max-width: 200px;
-}
-
-#logo {
-  float: left;
-  padding: 9px 24px;
-}
-
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -188,7 +161,6 @@ nav>ul>li>a {
   margin: 0;
   padding: 0.67em 0;
 }
-
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
@@ -201,31 +173,48 @@ nav>ul>li>a {
   display: block;
 }
 
-.navtoggle li:not(:last-child) {
+html {
+  scroll-behavior: smooth;
+}
+
+header nav {
+  text-align: center;
+  width: 100%;
+  float: right;
+}
+
+header nav a {
+  font-size: 1em;
+  padding: 5px 20px;
+}
+
+.navlinks.responsive {
+  display: block;
+}
+
+.navlinks a:not(:last-child) {
   display: none;
 }
 
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle.responsive li {
+.navlinks.responsive a {
   display: block;
-  padding-left: 12px;
-  padding-top: 8px;
 }
 
-.navtoggle li .icon {
+#logo a img {
+  max-width: 184px;
+  max-height: 46px;
+}
+#logo {
+  display: inline-block;
+  text-align: center;
+  float: left;
+  padding: 4px 0 0 12px;
+}
+.icon {
   position: absolute;
-  right: 0;
-  top: 4px;
-  font-size: 20px;
-  padding-right: 0;
-}
-
-html {
-  scroll-behavior: smooth;
+  right: 7px;
+  top: 12px;
+  padding: 0px 20px;
 }
 
 /* ==============================
@@ -236,45 +225,46 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
-  .logo {
-    max-width: 250px;
-  }
-
-  #logo {
-    float: left;
-    padding: 0px 24px;
-  }
-
-  nav {
-    width: auto;
+  header nav {
     float: right;
-    margin-top: 4px;
+    width: auto;
   }
-
-  .navtoggle li:not(:last-child) {
+  nav a:last-child {
+    display: none;
+  }
+  .navlinks a:not(:last-child) {
     display: inline-block;
   }
 
-  .navtoggle li:last-child {
-    display: none;
+  .active_tab {
+    border-bottom: 6px solid #baa388;
+    padding: 0px 24px 17px 24px;
+  }
+  #logo {
+    padding: 6px 0 0 12px;
+  }
+  main {
+    padding-top: 80px;
+  }
+  #logo a img {
+    max-width: 250px;
   }
 }
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
-
+@media only screen and (min-width: 1024px) {
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
-
+@media only screen and (min-width: 1440px) {
+}
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 1920px) {
+}
 
 .col-md-6 {
   width: 50%;
@@ -294,30 +284,24 @@ Extra-large devices (1920px or larger)
 #my-story {
   overflow: hidden;
 }
-
 #my-story .skills {
   display: inline-block;
   padding: 0 0em 0 2em;
 }
-
 #my-story h2 {
   margin: 0;
 }
-
 @keyframes color-change {
   0% {
     fill: #edc655;
   }
-
   50% {
     fill: #fcffad;
   }
-
   100% {
     fill: #f76414;
   }
 }
-
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -325,17 +309,14 @@ Extra-large devices (1920px or larger)
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-
 @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
-
   to {
     transform: translate(200px, 50px);
   }
 }
-
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -343,17 +324,14 @@ Extra-large devices (1920px or larger)
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-
 @keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
   }
-
   to {
     transform: translate(100px, 48px);
   }
 }
-
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
