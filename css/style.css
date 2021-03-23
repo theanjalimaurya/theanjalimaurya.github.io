@@ -17,7 +17,7 @@ body {
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: white;
+  color: black;
 }
 main {
   padding-top: 50px;
@@ -106,6 +106,7 @@ a {
   background-color: #1e1a33;
   text-align: center;
   padding: 1em;
+  color: white;
 }
 
 #contact ul {
@@ -162,6 +163,7 @@ nav > ul > li > a {
   display: inline-block;
   width: 100%;
   text-align: center;
+  color: white;
 }
 
 #hero span {
