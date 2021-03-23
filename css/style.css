@@ -129,6 +129,7 @@ a {
   max-width: 100%;
   height: auto;
 }
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
@@ -245,6 +246,9 @@ Medium devices (640px and larger)
   }
   #logo a img {
     max-width: 250px;
+  }
+  .project {
+    padding: 81px 81px 0 81px;
   }
 }
 /* ==============================
