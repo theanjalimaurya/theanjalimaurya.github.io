@@ -109,8 +109,11 @@ a {
   color: white;
 }
 
-#contact ul {
-  display: inline-block;
+#contact h2{
+  margin-top: 0em;
+}
+.social-links a{
+padding: 0.5em 1.5em;
 }
 
 .contact-svg {
@@ -211,7 +214,7 @@ header nav a {
 .icon {
   position: absolute;
   right: 7px;
-  top: 12px;
+  top: 20px;
   padding: 0px 20px;
 }
 
