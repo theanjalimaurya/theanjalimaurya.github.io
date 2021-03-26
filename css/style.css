@@ -83,6 +83,7 @@ a {
 
 .button.contact {
   border-radius: 1.3em;
+  width: 10em;
 }
 
 .button {
@@ -262,10 +263,12 @@ header nav a {
   text-align: center;
 }
 
-#about .col-md-6 {
+.col-md-6 {
   width: 100%;
   padding: 0;
 }
+
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -310,9 +313,9 @@ Medium devices (640px and larger)
     padding: 81px 81px 0 81px;
   }
 
-  #about .col-md-6 {
+  .col-md-6 {
     width: 40%;
-    padding: 0 3em 0 2em;
+    padding: 0 2em 0 2em;
   }
 }
 
@@ -331,13 +334,13 @@ Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {}
 
-.col-md-6 {
+/* .col-md-6 {
   width: 50%;
-}
+} */
 
 [class*="col-"] {
   float: left;
-  padding: 0 3em 0 2em;
+  /* padding: 0 3em 0 2em; */
 }
 
 .row::after {
