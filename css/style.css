@@ -12,7 +12,7 @@ header {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #F5F5F7;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -160,6 +160,7 @@ a {
 
 #work h2 {
   text-align: center;
+  margin-top: 0;
 }
 
 nav>ul {
@@ -182,7 +183,7 @@ nav>ul>li>a {
 
 #hero {
   background-color: #1e1a33;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -238,6 +239,7 @@ header nav a {
   top: 17px;
   padding: 0px 20px;
 }
+
 /* 
 .about-image {
 
@@ -315,6 +317,7 @@ Medium devices (640px and larger)
     width: 40%;
     padding: 0 2em 0 2em;
   }
+
   .about-image {
     float: left;
     margin: 0 12px 12px 0;
