@@ -13,7 +13,8 @@ header {
 
 body {
   background-color: #ffffff;
-  font-family: "Lato", sans-serif;
+  font-family: 'Montserrat',
+    sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
   font-weight: 300;
@@ -128,6 +129,11 @@ a {
   text-align: center;
   padding: 1em;
   color: white;
+}
+
+#contact .sub {
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 #contact h2 {
