@@ -12,7 +12,7 @@ header {
 }
 
 body {
-  background-color: #F5F5F7;
+  background-color: #ffffff;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -61,6 +61,14 @@ img {
 a {
   color: white;
   text-decoration: none;
+}
+
+#web {
+  display: none;
+}
+
+#mobile {
+  display: block;
 }
 
 .button {
@@ -160,7 +168,6 @@ a {
 
 #work h2 {
   text-align: center;
-  margin-top: 0;
 }
 
 nav>ul {
@@ -183,7 +190,7 @@ nav>ul>li>a {
 
 #hero {
   background-color: #1e1a33;
-  padding: 20px 0 0 0;
+  padding: 20px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -245,7 +252,7 @@ header nav a {
 
 } */
 
-#about h2 {
+/* #about h2 {
   font-size: 2.3em;
   text-align: center;
 }
@@ -257,7 +264,7 @@ header nav a {
 
 #about .container {
   max-width: 800px;
-}
+} */
 
 .about-cv {
   text-align: center;
@@ -322,6 +329,14 @@ Medium devices (640px and larger)
     float: left;
     margin: 0 12px 12px 0;
     max-width: 300px;
+  }
+
+  #web {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
   }
 }
 
