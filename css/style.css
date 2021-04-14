@@ -68,7 +68,7 @@ a {
   display: none;
 }
 
-#mobile {
+.mobile {
   display: block;
 }
 
@@ -234,6 +234,17 @@ header nav a {
   display: block;
 }
 
+.about {
+  background-color: #1e1a33;
+  color: white;
+  text-align: center;
+}
+
+.about p {
+  margin: 0;
+  padding: 1em;
+}
+
 #logo a img {
   max-width: 184px;
   max-height: 46px;
@@ -252,25 +263,6 @@ header nav a {
   top: 17px;
   padding: 0px 20px;
 }
-
-/* 
-.about-image {
-
-} */
-
-/* #about h2 {
-  font-size: 2.3em;
-  text-align: center;
-}
-
-#about h3 {
-  text-align: center;
-  margin-bottom: 0;
-}
-
-#about .container {
-  max-width: 800px;
-} */
 
 .about-cv {
   text-align: center;
@@ -341,7 +333,7 @@ Medium devices (640px and larger)
     display: block;
   }
 
-  #mobile {
+  .mobile {
     display: none;
   }
 }
